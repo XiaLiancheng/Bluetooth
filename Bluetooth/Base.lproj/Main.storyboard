@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="JYq-Wk-YD9">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1.png" translatesAutoresizingMaskIntoConstraints="NO" id="wP4-du-LXD">
+                                <rect key="frame" x="78" y="176" width="147" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG2-HK-lBf">
+                                <rect key="frame" x="71" y="359" width="60" height="30"/>
+                                <state key="normal" title="发送图片"/>
+                                <connections>
+                                    <action selector="clickSend:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wGF-Wf-7d4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF3-Ot-ZwR">
+                                <rect key="frame" x="71" y="443" width="60" height="30"/>
+                                <state key="normal" title="查找设备"/>
+                                <connections>
+                                    <action selector="searchDevice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rVS-gt-Jml"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NkL-2h-rF2">
+                                <rect key="frame" x="24" y="397" width="130" height="30"/>
+                                <state key="normal" title="使用CoreBluetooth"/>
+                                <connections>
+                                    <segue destination="Soc-j4-FVQ" kind="show" id="dTB-YI-4ua"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zW4-I2-dAv"/>
+                    <connections>
+                        <outlet property="imageView" destination="wP4-du-LXD" id="PPC-oR-tjV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="280" y="244"/>
+        </scene>
+        <!--Use Core BluetoothVC-->
+        <scene sceneID="hHM-XL-oLk">
+            <objects>
+                <viewController id="Soc-j4-FVQ" customClass="UseCoreBluetoothVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8YH-W4-ESg"/>
+                        <viewControllerLayoutGuide type="bottom" id="GI3-xd-W85"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cLf-i2-4YC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3M-kc-9nH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="921" y="244"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="O05-r3-usW">
+            <objects>
+                <navigationController id="JYq-Wk-YD9" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wFC-YU-l34">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="io6-Y6-Akf"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LL4-ig-xaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-456" y="244"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="90" height="90"/>
+    </resources>
+</document>
