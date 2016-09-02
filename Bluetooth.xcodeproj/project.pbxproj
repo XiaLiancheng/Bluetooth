@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		180CF28E1D77CDA00018277D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CF28D1D77CDA00018277D /* main.m */; };
 		180CF2911D77CDA00018277D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CF2901D77CDA00018277D /* AppDelegate.m */; };
-		180CF2941D77CDA00018277D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CF2931D77CDA00018277D /* ViewController.m */; };
+		180CF2941D77CDA00018277D /* UseGameKitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CF2931D77CDA00018277D /* UseGameKitVC.m */; };
 		180CF2971D77CDA00018277D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180CF2951D77CDA00018277D /* Main.storyboard */; };
 		180CF2991D77CDA00018277D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180CF2981D77CDA00018277D /* Assets.xcassets */; };
 		180CF29C1D77CDA00018277D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180CF29A1D77CDA00018277D /* LaunchScreen.storyboard */; };
@@ -24,8 +24,8 @@
 		180CF28D1D77CDA00018277D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		180CF28F1D77CDA00018277D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		180CF2901D77CDA00018277D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		180CF2921D77CDA00018277D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		180CF2931D77CDA00018277D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		180CF2921D77CDA00018277D /* UseGameKitVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UseGameKitVC.h; sourceTree = "<group>"; };
+		180CF2931D77CDA00018277D /* UseGameKitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseGameKitVC.m; sourceTree = "<group>"; };
 		180CF2961D77CDA00018277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		180CF2981D77CDA00018277D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		180CF29B1D77CDA00018277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -73,8 +73,8 @@
 			children = (
 				180CF28F1D77CDA00018277D /* AppDelegate.h */,
 				180CF2901D77CDA00018277D /* AppDelegate.m */,
-				180CF2921D77CDA00018277D /* ViewController.h */,
-				180CF2931D77CDA00018277D /* ViewController.m */,
+				180CF2921D77CDA00018277D /* UseGameKitVC.h */,
+				180CF2931D77CDA00018277D /* UseGameKitVC.m */,
 				180CF2A91D781ADE0018277D /* UseCoreBluetoothVC.h */,
 				180CF2AA1D781ADE0018277D /* UseCoreBluetoothVC.m */,
 				180CF2951D77CDA00018277D /* Main.storyboard */,
@@ -168,7 +168,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				180CF2AB1D781ADE0018277D /* UseCoreBluetoothVC.m in Sources */,
-				180CF2941D77CDA00018277D /* ViewController.m in Sources */,
+				180CF2941D77CDA00018277D /* UseGameKitVC.m in Sources */,
 				180CF2911D77CDA00018277D /* AppDelegate.m in Sources */,
 				180CF28E1D77CDA00018277D /* main.m in Sources */,
 			);
@@ -327,6 +327,7 @@
 				180CF2A21D77CDA00018277D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

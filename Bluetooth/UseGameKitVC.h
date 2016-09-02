@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UseGameKitVC.h
 //  Bluetooth
 //
 //  Created by apple on 16/9/1.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface UseGameKitVC : UIViewController
 
 
 @end

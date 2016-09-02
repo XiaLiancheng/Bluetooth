@@ -1,15 +1,15 @@
 //
-//  ViewController.m
+//  UseGameKitVC.m
 //  Bluetooth
 //
 //  Created by apple on 16/9/1.
 //  Copyright © 2016年 Liancheng. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "UseGameKitVC.h"
 #import <GameKit/GameKit.h>
 
-@interface ViewController ()<GKPeerPickerControllerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface UseGameKitVC ()<GKPeerPickerControllerDelegate,UIImagePickerControllerDelegate,UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *imageView;
 /**
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation ViewController
+@implementation UseGameKitVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
