@@ -64,12 +64,80 @@
                     <view key="view" contentMode="scaleToFill" id="cLf-i2-4YC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G08-We-EbF">
+                                <rect key="frame" x="20" y="94" width="102" height="30"/>
+                                <state key="normal" title="打开外围设备"/>
+                                <connections>
+                                    <action selector="Start:" destination="Soc-j4-FVQ" eventType="touchUpInside" id="uaW-oA-UU8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Mf-XW-iu3">
+                                <rect key="frame" x="217" y="94" width="30" height="30"/>
+                                <state key="normal" title="更新"/>
+                                <connections>
+                                    <action selector="update:" destination="Soc-j4-FVQ" eventType="touchUpInside" id="Ioh-cG-oDW"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="qeB-ub-AHl">
+                                <rect key="frame" x="20" y="132" width="240" height="342"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1k-hd-0eH">
+                                <rect key="frame" x="150" y="94" width="30" height="30"/>
+                                <state key="normal" title="中心"/>
+                                <connections>
+                                    <segue destination="Fok-d6-GrR" kind="show" id="Om9-Lj-a5H"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="log" destination="qeB-ub-AHl" id="7ft-Km-dfz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E3M-kc-9nH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="244"/>
+            <point key="canvasLocation" x="1007" y="244"/>
+        </scene>
+        <!--Central DeviceVC-->
+        <scene sceneID="boO-gW-wJy">
+            <objects>
+                <viewController id="Fok-d6-GrR" customClass="CentralDeviceVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pro-Fl-m7i"/>
+                        <viewControllerLayoutGuide type="bottom" id="Png-cp-vDp"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="JcM-5E-i6M">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cx9-Rj-KGN">
+                                <rect key="frame" x="23" y="93" width="90" height="30"/>
+                                <state key="normal" title="启动中心设备"/>
+                                <connections>
+                                    <action selector="startClick:" destination="Fok-d6-GrR" eventType="touchUpInside" id="Cmg-QF-0kY"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="U41-gH-Ab5">
+                                <rect key="frame" x="20" y="131" width="240" height="368"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="log" destination="U41-gH-Ab5" id="0KP-wJ-vMH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QGj-fO-0xH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1641" y="244"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="O05-r3-usW">

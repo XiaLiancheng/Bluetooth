@@ -10,6 +10,7 @@
 #import <CoreBluetooth/CoreBluetooth.h>
 
 @interface UseCoreBluetoothVC ()<CBPeripheralManagerDelegate>
+
 NS_ASSUME_NONNULL_BEGIN
 /**
  *  外围设备管理器
@@ -28,6 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (weak, nonatomic) IBOutlet UITextView *log;
 NS_ASSUME_NONNULL_END
+
 @end
 
 @implementation UseCoreBluetoothVC
@@ -48,7 +50,7 @@ NS_ASSUME_NONNULL_END
  *   3. 外围设备开始广播服务（startAdvertisting:）。
  *   4. 和中央设备CBCentral进行交互。
  */
-- (IBAction)Start:(nullable id)sender {
+- (IBAction)Start:(id)sender {
     self.peripheralManager = [[CBPeripheralManager alloc]initWithDelegate:self queue:nil];
 }
 
@@ -168,6 +170,7 @@ NS_ASSUME_NONNULL_END
     [self.peripheralManager updateValue:value forCharacteristic:self.characteristicM onSubscribedCentrals:nil];
     [self writeToLog:[NSString stringWithFormat:@"更新特征值：%@",valueStr]];
 }
+
 - (IBAction)update:(id)sender {
     [self updateCharacteristicValue];
 }
