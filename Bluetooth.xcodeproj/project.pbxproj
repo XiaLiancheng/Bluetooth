@@ -17,6 +17,7 @@
 		180CF2A81D7819260018277D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180CF2A71D7819260018277D /* CoreBluetooth.framework */; };
 		181FDD4A1D7D5E8500B9CC32 /* CentralDeviceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FDD471D7D5E8500B9CC32 /* CentralDeviceVC.m */; };
 		181FDD4B1D7D5E8500B9CC32 /* UseCoreBluetoothVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FDD491D7D5E8500B9CC32 /* UseCoreBluetoothVC.m */; };
+		18566D2D1D81471400E187A2 /* UseAirDropVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 18566D2C1D81471400E187A2 /* UseAirDropVC.m */; };
 		186D6EBC1D7EB4410033E23A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186D6EBA1D7EB4410033E23A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,8 @@
 		181FDD471D7D5E8500B9CC32 /* CentralDeviceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CentralDeviceVC.m; sourceTree = "<group>"; };
 		181FDD481D7D5E8500B9CC32 /* UseCoreBluetoothVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseCoreBluetoothVC.h; sourceTree = "<group>"; };
 		181FDD491D7D5E8500B9CC32 /* UseCoreBluetoothVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseCoreBluetoothVC.m; sourceTree = "<group>"; };
+		18566D2B1D81471400E187A2 /* UseAirDropVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseAirDropVC.h; sourceTree = "<group>"; };
+		18566D2C1D81471400E187A2 /* UseAirDropVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseAirDropVC.m; sourceTree = "<group>"; };
 		186D6EBB1D7EB4410033E23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +85,8 @@
 				181FDD491D7D5E8500B9CC32 /* UseCoreBluetoothVC.m */,
 				181FDD461D7D5E8500B9CC32 /* CentralDeviceVC.h */,
 				181FDD471D7D5E8500B9CC32 /* CentralDeviceVC.m */,
+				18566D2B1D81471400E187A2 /* UseAirDropVC.h */,
+				18566D2C1D81471400E187A2 /* UseAirDropVC.m */,
 				180CF2951D77CDA00018277D /* Main.storyboard */,
 				180CF2981D77CDA00018277D /* Assets.xcassets */,
 				186D6EBA1D7EB4410033E23A /* LaunchScreen.storyboard */,
@@ -172,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18566D2D1D81471400E187A2 /* UseAirDropVC.m in Sources */,
 				180CF2941D77CDA00018277D /* UseGameKitVC.m in Sources */,
 				180CF2911D77CDA00018277D /* AppDelegate.m in Sources */,
 				181FDD4A1D7D5E8500B9CC32 /* CentralDeviceVC.m in Sources */,
