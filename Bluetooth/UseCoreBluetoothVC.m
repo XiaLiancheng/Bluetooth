@@ -37,6 +37,7 @@ NS_ASSUME_NONNULL_END
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.title = @"外围设备";
+    NSLog(@"%@",[self uuid]);
     // Do any additional setup after loading the view.
 }
 
@@ -133,8 +134,8 @@ NS_ASSUME_NONNULL_END
     //创建特征的UUID对象
     CBUUID * characteristicUUID = [CBUUID UUIDWithString:kCharacteristicUUID];
     //特征值
-    NSString *valueStr = kPeripheralName;
-    NSData * value = [valueStr dataUsingEncoding:NSUTF8StringEncoding];
+//    NSString *valueStr = kPeripheralName;
+//    NSData * value = [valueStr dataUsingEncoding:NSUTF8StringEncoding];
     //创建特征
     /**
      *  参数
@@ -189,6 +190,12 @@ NS_ASSUME_NONNULL_END
     }
     return _centralDevicesOfOrderPeripheralManager;
 }
+
+-(NSUUID *)uuid {
+    NSUUID *uuid = [UIDevice currentDevice].identifierForVendor;
+    return uuid;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

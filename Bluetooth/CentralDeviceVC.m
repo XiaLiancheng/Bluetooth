@@ -132,11 +132,11 @@ NS_ASSUME_NONNULL_END
                  */
                 [peripheral setNotifyValue:YES forCharacteristic:characteristic];
                 //情景二：读取
-                //                [peripheral readValueForCharacteristic:characteristic];
-                //                    if(characteristic.value){
-                //                    NSString *value=[[NSString alloc]initWithData:characteristic.value encoding:NSUTF8StringEncoding];
-                //                    NSLog(@"读取到特征值：%@",value);
-                //                }
+//                                [peripheral readValueForCharacteristic:characteristic];
+//                                    if(characteristic.value){
+//                                    NSString *value=[[NSString alloc]initWithData:characteristic.value encoding:NSUTF8StringEncoding];
+//                                    NSLog(@"读取到特征值：%@",value);
+//                                }
             }
         }
     }

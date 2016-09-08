@@ -12,12 +12,12 @@
 		180CF2941D77CDA00018277D /* UseGameKitVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 180CF2931D77CDA00018277D /* UseGameKitVC.m */; };
 		180CF2971D77CDA00018277D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180CF2951D77CDA00018277D /* Main.storyboard */; };
 		180CF2991D77CDA00018277D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 180CF2981D77CDA00018277D /* Assets.xcassets */; };
-		180CF29C1D77CDA00018277D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 180CF29A1D77CDA00018277D /* LaunchScreen.storyboard */; };
 		180CF2A41D77CE0B0018277D /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180CF2A31D77CE0B0018277D /* GameKit.framework */; };
 		180CF2A61D77D3FE0018277D /* 1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 180CF2A51D77D3FE0018277D /* 1@2x.png */; };
 		180CF2A81D7819260018277D /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180CF2A71D7819260018277D /* CoreBluetooth.framework */; };
 		181FDD4A1D7D5E8500B9CC32 /* CentralDeviceVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FDD471D7D5E8500B9CC32 /* CentralDeviceVC.m */; };
 		181FDD4B1D7D5E8500B9CC32 /* UseCoreBluetoothVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 181FDD491D7D5E8500B9CC32 /* UseCoreBluetoothVC.m */; };
+		186D6EBC1D7EB4410033E23A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 186D6EBA1D7EB4410033E23A /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,6 @@
 		180CF2931D77CDA00018277D /* UseGameKitVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UseGameKitVC.m; sourceTree = "<group>"; };
 		180CF2961D77CDA00018277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		180CF2981D77CDA00018277D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		180CF29B1D77CDA00018277D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		180CF29D1D77CDA00018277D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		180CF2A31D77CE0B0018277D /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		180CF2A51D77D3FE0018277D /* 1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1@2x.png"; sourceTree = "<group>"; };
@@ -38,6 +37,7 @@
 		181FDD471D7D5E8500B9CC32 /* CentralDeviceVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CentralDeviceVC.m; sourceTree = "<group>"; };
 		181FDD481D7D5E8500B9CC32 /* UseCoreBluetoothVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UseCoreBluetoothVC.h; sourceTree = "<group>"; };
 		181FDD491D7D5E8500B9CC32 /* UseCoreBluetoothVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UseCoreBluetoothVC.m; sourceTree = "<group>"; };
+		186D6EBB1D7EB4410033E23A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,8 +84,8 @@
 				181FDD471D7D5E8500B9CC32 /* CentralDeviceVC.m */,
 				180CF2951D77CDA00018277D /* Main.storyboard */,
 				180CF2981D77CDA00018277D /* Assets.xcassets */,
+				186D6EBA1D7EB4410033E23A /* LaunchScreen.storyboard */,
 				180CF2A51D77D3FE0018277D /* 1@2x.png */,
-				180CF29A1D77CDA00018277D /* LaunchScreen.storyboard */,
 				180CF29D1D77CDA00018277D /* Info.plist */,
 				180CF28C1D77CDA00018277D /* Supporting Files */,
 			);
@@ -158,8 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				180CF29C1D77CDA00018277D /* LaunchScreen.storyboard in Resources */,
 				180CF2A61D77D3FE0018277D /* 1@2x.png in Resources */,
+				186D6EBC1D7EB4410033E23A /* LaunchScreen.storyboard in Resources */,
 				180CF2991D77CDA00018277D /* Assets.xcassets in Resources */,
 				180CF2971D77CDA00018277D /* Main.storyboard in Resources */,
 			);
@@ -191,10 +191,10 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		180CF29A1D77CDA00018277D /* LaunchScreen.storyboard */ = {
+		186D6EBA1D7EB4410033E23A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				180CF29B1D77CDA00018277D /* Base */,
+				186D6EBB1D7EB4410033E23A /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -293,6 +293,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Liancheng.Bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,6 +308,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Bluetooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Liancheng.Bluetooth;
 				PRODUCT_NAME = "$(TARGET_NAME)";

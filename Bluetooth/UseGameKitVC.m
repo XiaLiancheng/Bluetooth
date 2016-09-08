@@ -30,6 +30,7 @@
 
 - (IBAction)searchDevice:(id)sender {
     GKPeerPickerController *peerPickerController = [[GKPeerPickerController alloc]init];
+    peerPickerController.connectionTypesMask = GKPeerPickerConnectionTypeNearby;
     peerPickerController.delegate = self;
     [peerPickerController show];
 }
@@ -60,12 +61,15 @@
  *  @param session 连接会话
  */
 - (void)peerPickerController:(GKPeerPickerController *)picker didConnectPeer:(NSString *)peerID toSession:(GKSession *)session{
-    self.session = session;
+    //一旦连接成功关闭窗口
+    [picker dismiss];
+   
     NSLog(@"已经连接客户端设备：%@",peerID);
     //设置数据接收处理句柄，相当于代理，一旦数据接收完成后调用 -receiveData:fromPeer:inSession:context:方法处理数据
     [self.session setDataReceiveHandler:self withContext:nil];
-    //一旦连接成功关闭窗口
-    [picker dismiss];
+
+    
+     self.session = session;
 }
 
 #pragma mark - 蓝牙数据接收方法
